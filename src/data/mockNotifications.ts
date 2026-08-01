@@ -1,0 +1,88 @@
+import { AppNotification, MandiPrice } from '../types';
+
+export const initialNotifications: AppNotification[] = [
+  {
+    id: 'notif-1',
+    title: 'Rainfall Alert in Jaipur District',
+    message: '25-40mm rain expected between Saturday evening and Sunday night. Postpone urea top dressing.',
+    type: 'weather',
+    timestamp: '10 mins ago',
+    isRead: false,
+    actionUrl: '/weather',
+  },
+  {
+    id: 'notif-2',
+    title: 'Seed Sowing Task Reminder',
+    message: 'Yellow Mustard seed treatment & sowing task is due in 3 days for Surya Mustard Field North.',
+    type: 'task',
+    timestamp: '2 hours ago',
+    isRead: false,
+    actionUrl: '/calendar',
+  },
+  {
+    id: 'notif-3',
+    title: 'NMEO-Oilseeds Mini-Kit Distribution Open',
+    message: '50% seed subsidy applications open in Rajasthan. Deadline: 30th Sept 2026.',
+    type: 'scheme',
+    timestamp: '1 day ago',
+    isRead: false,
+    actionUrl: '/schemes',
+  },
+  {
+    id: 'notif-4',
+    title: 'Mustard Mandi Price Surge',
+    message: 'Jaipur Mandi spot price rose to ₹5,850/Quintal (+₹120) due to festive oil demand.',
+    type: 'market',
+    timestamp: '2 days ago',
+    isRead: true,
+    actionUrl: '/dashboard',
+  },
+];
+
+export const initialMandiPrices: MandiPrice[] = [
+  {
+    id: 'mandi-1',
+    mandiName: 'Jaipur Grain Mandi',
+    state: 'Rajasthan',
+    commodity: 'Mustard Seed (Sarson)',
+    modalPricePerQuintal: 5850,
+    priceChangeRupees: 120,
+    updatedAt: 'Today, 09:15 AM',
+  },
+  {
+    id: 'mandi-2',
+    mandiName: 'Rajkot Cotton & Groundnut Yard',
+    state: 'Gujarat',
+    commodity: 'Groundnut in Shell (Mungfali)',
+    modalPricePerQuintal: 6420,
+    priceChangeRupees: -40,
+    updatedAt: 'Today, 08:45 AM',
+  },
+  {
+    id: 'mandi-3',
+    mandiName: 'Indore APMC Yard',
+    state: 'Madhya Pradesh',
+    commodity: 'Yellow Soybean',
+    modalPricePerQuintal: 4780,
+    priceChangeRupees: 85,
+    updatedAt: 'Today, 10:00 AM',
+  },
+  {
+    id: 'mandi-4',
+    mandiName: 'Bellary Agricultural Market',
+    state: 'Karnataka',
+    commodity: 'Sunflower Seed',
+    modalPricePerQuintal: 5350,
+    priceChangeRupees: 60,
+    updatedAt: 'Yesterday',
+  },
+  {
+    id: 'mandi-5',
+    mandiName: 'Latur APMC',
+    state: 'Maharashtra',
+    commodity: 'Sesame Seed (Til White)',
+    modalPricePerQuintal: 12400,
+    priceChangeRupees: 250,
+    updatedAt: 'Today, 09:30 AM',
+  },
+];

@@ -1,0 +1,8 @@
+{
+  "name": "Remix Tilahan Saathi",
+  "description": "AI-powered decision support platform for oilseed farmers in India",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
